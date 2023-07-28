@@ -26,6 +26,7 @@ class MusicAlbum extends Seeder
             $album->genere = $faker->randomElement(['Funk', 'Rock', 'Kpop', 'Neomelodica', 'Rap']);   
             $album->autore = $faker->name();
             $album->prezzo = $faker->randomFloat(2, 5, 99);
+            $album->anno  =  $faker->year();
 
             $album->save();
             
