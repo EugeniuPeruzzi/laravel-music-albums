@@ -14,7 +14,7 @@ use App\Http\Controllers\AlbumsController as AlbumsController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/albums', [AlbumsController::class, 'index'])->name('albums.index');
