@@ -27,6 +27,7 @@ class MusicAlbum extends Seeder
             $album->autore = $faker->name();
             $album->prezzo = $faker->randomFloat(2, 5, 99);
             $album->anno  =  $faker->year();
+            $album->pubblicazione = $faker->date('Y_m_d');
 
             $album->save();
             
